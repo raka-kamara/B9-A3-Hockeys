@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lato:wght@300;400;700;900&family=Manrope:wght@400;500;600;700;800&family=Merriweather:wght@400;700;900&family=Mulish:wght@400;600;700;800&family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font">
+    <header class="">
+      <nav class="container mx-auto lg:px-24 px-8 my-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Item 1</a></li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">Button</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mx-auto lg:px-24 px-8 my-8 lg:relative">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full rounded-2xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5))]"
+          >
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full rounded-2xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5))]"
+          >
+            <img src="Images/4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full rounded-2xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5))]"
+          >
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full rounded-2xl bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5))]"
+          >
+            <img src="Images/4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="my-3 lg:w-2/5 bg-black text-white px-8 py-8 space-y-3 rounded-xl lg:absolute lg:right-32 lg:top-96"
+        >
+          <h3 class="font-extrabold text-2xl">
+            Meet all the heroes from the field
+          </h3>
+          <p class="font-medium opacity-60 text-sm">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Professional section -->
+      <section class="container mx-auto lg:px-24 px-8 my-32">
+        <div
+          class="border-b border-t border-dashed py-4 flex flex-col justify-center items-center"
+        >
+          <h2 class="text-center font-extrabold text-4xl my-4">
+            Professional Hockeys Club
+          </h2>
+          <p class="text-center opacity-75 font-medium text-base W-3/5">
+            Unleash the power of the ice! Join our elite hockey club for
+            thrilling games and victories.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto px-8 lg:px-24 my-20"
+        >
+          <div
+            class="w-auto flex flex-col justify-center items-center space-y-4 my-7"
+          >
+            <div
+              class="radial-progress"
+              style="--value: 87; color: red; font-size: large; rotate: 150deg"
+              role="progressbar"
+            >
+              <span class="text-black font-extrabold rotate-[210deg]">87%</span>
+            </div>
+            <h3 class="font-semibold text-xl">Prayer Facility</h3>
+            <p class="text-center text-base">
+              Our club provides prayer facilities
+            </p>
+          </div>
+
+          <div
+            class="w-auto flex flex-col justify-center items-center space-y-4 my-7"
+          >
+            <div
+              class="radial-progress"
+              style="
+                --value: 95;
+                color: #49d293;
+                font-size: large;
+                rotate: 100deg;
+              "
+              role="progressbar"
+            >
+              <span class="text-black font-extrabold -rotate-[100deg]"
+                >95%</span
+              >
+            </div>
+            <h3 class="font-semibold text-xl">Experienced Coach</h3>
+            <p class="text-center text-base">
+              Our club provides experienced coach.
+            </p>
+          </div>
+
+          <div
+            class="w-auto flex flex-col justify-center items-center space-y-4 my-7"
+          >
+            <div
+              class="radial-progress"
+              style="
+                --value: 90;
+                color: rgb(248, 159, 43);
+                font-size: large;
+                rotate: 150deg;
+              "
+              role="progressbar"
+            >
+              <span class="text-black font-extrabold rotate-[210deg]">90%</span>
+            </div>
+            <h3 class="font-semibold text-xl">Senior Player</h3>
+            <p class="text-center text-base">
+              Our club has many senior players
+            </p>
+          </div>
+
+          <div
+            class="w-auto flex flex-col justify-center items-center space-y-4"
+          >
+            <div
+              class="radial-progress"
+              style="
+                --value: 80;
+                color: #4c8df1;
+                font-size: large;
+                rotate: 150deg;
+              "
+              role="progressbar"
+            >
+              <span class="text-black font-extrabold rotate-[210deg]">80%</span>
+            </div>
+            <h3 class="font-semibold text-xl">Training Ground</h3>
+            <p class="text-center text-base">
+              Our club provides spacious training ground
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program section -->
+      <section class="container mx-auto lg:px-24 px-8 my-20">
+        <div
+          class="border-b border-t border-dashed py-4 flex flex-col justify-center items-center"
+        >
+          <h2 class="text-center font-extrabold text-4xl my-4">
+            Program Sections
+          </h2>
+          <p class="text-center opacity-75 font-medium text-base w-3/5">
+            Unleash the power of the ice! Join our elite hockey club for
+            thrilling games and victories.
+          </p>
+        </div>
+
+        <div
+          class="my-10 grid lg:grid-cols-2 container mx-auto lg:px-24 px-8 my-20 gap-7"
+        >
+          <div
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('/Images/2.png')] bg-no-repeat w-auto h-[300px] rounded-2xl text-white p-5 lg:px-10 lg:py-20"
+          >
+            <h3 class="text-3xl font-extrabold">Junior Program</h3>
+            <p class="text-base font-medium opacity-80 py-4">
+              Ignite passion on the ice! Our Junior Hockey Program nurtures
+              young talents with skill development and fun.
+            </p>
+            <button
+              class="btn btn-wide bg-[#FF4240] text-white text-xl font-bold border-0 w-44"
+            >
+              Register Now!
+            </button>
+          </div>
+
+          <div
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('/Images/3.png')] bg-no-repeat w-auto h-[300px] rounded-2xl text-white p-5 lg:px-10 lg:py-20"
+          >
+            <h3 class="text-3xl font-extrabold">Junior Program</h3>
+            <p class="text-base font-medium opacity-80 py-4">
+              Ignite passion on the ice! Our Junior Hockey Program nurtures
+              young talents with skill development and fun.
+            </p>
+            <button
+              class="btn btn-wide bg-[#FF4240] text-white text-xl font-bold border-0 w-44"
+            >
+              Register Now!
+            </button>
+          </div>
+
+          <div
+            class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('/Images/4.png')] bg-no-repeat w-auto h-[300px] rounded-2xl text-white p-5 lg:px-10 lg:py-20 lg:col-span-2"
+          >
+            <h3 class="text-3xl font-extrabold">Junior Program</h3>
+            <p class="text-base font-medium opacity-80 py-4">
+              Ignite passion on the ice! Our Junior Hockey Program nurtures
+              young talents with skill development and fun.
+            </p>
+            <button
+              class="btn btn-wide bg-[#FF4240] text-white text-xl font-bold border-0 w-44"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product section -->
+      <section class="container mx-auto lg:px-24 px-8 my-32">
+        <div
+          class="border-b border-t border-dashed py-4 flex flex-col justify-center items-center"
+        >
+          <h2 class="text-center font-extrabold text-4xl my-4">
+            Our New Products
+          </h2>
+          <p class="text-center opacity-75 font-medium text-base W-3/5">
+            Unleash the power of the ice! Join our elite hockey club for
+            thrilling games and victories.
+          </p>
+        </div>
+
+        <div class="w-auto grid lg:grid-cols-2 gap-4">
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/5.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4 my-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/6.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/7.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/8.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/9.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-auto m-auto flex flex-col sm:flex-row justify-between p-4 gap-4"
+          >
+            <div class="flex justify-center items-center w-auto m-auto my-4">
+              <img src="Images/10.png" alt="" />
+            </div>
+
+            <div class="m-auto lg:w-2/3 flex-row gap-4">
+              <div class="flex gap-4">
+                <img src="Images/Frame.png" alt="" />
+                <p class="opacity-80">5.0</p>
+                <img src="Images/Frame (2).png" alt="" />
+                <p class="opacity-80">20</p>
+                <img src="Images/Frame (3).png" alt="" />
+                <p>200</p>
+              </div>
+              <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
+              <p class="opacity-80 text-base font-medium">
+                Enhance your game with our cutting-edge football product,
+                designed for performance, comfort, and ultimate success.
+              </p>
+              <div class="flex justify-between">
+                <p class="text-[#FF4240] text-lg font-extrabold">
+                  Price - $22.00
+                </p>
+                <p class="opacity-80 flex gap-2 text-lg font-extrabold">
+                  <img src="Images/Frame (1).png" alt="" /> DeliveryFee:Free
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--Client section  -->
+      <section class="container mx-auto lg:px-24 px-8 my-32">
+        <div
+          class="border-b border-t border-dashed py-4 flex flex-col justify-center items-center"
+        >
+          <h2 class="text-center font-extrabold text-4xl my-4">
+            Our New Products
+          </h2>
+          <p class="text-center opacity-75 font-medium text-base W-3/5">
+            Unleash the power of the ice! Join our elite hockey club for
+            thrilling games and victories.
+          </p>
+        </div>
+
+        <div>
+          
+        </div>
+
+      </section>
+
+
+    </main>
+  </body>
+</html>
